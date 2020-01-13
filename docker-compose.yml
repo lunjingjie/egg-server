@@ -19,7 +19,7 @@ services:
     container_name: santak_nginx    # 容器名称
     restart: always                 # 重启方式
     ports:                          # 映射端口
-      - "80:80"
+      - "9011:9011"
     volumes:                        # 挂载数据卷
       - /etc/localtime:/etc/localtime
       - /root/nginx/conf.d:/etc/nginx/conf.d
