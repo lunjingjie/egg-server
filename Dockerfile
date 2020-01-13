@@ -1,4 +1,4 @@
-FROM node:10.0-alpine
+FROM node:LTS
 
 # 设置时区
 RUN apk --update add tzdata \
