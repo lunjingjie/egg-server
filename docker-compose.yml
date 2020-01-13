@@ -52,6 +52,8 @@ services:
       context: .
       dockerfile: Dockerfile
     image: nodejs                   # 镜像名称
+    ports:
+      - 9012
     container_name: nodejs          # 容器名称
     restart: always                 # 重启方式
     depends_on:                     # 启动顺序
