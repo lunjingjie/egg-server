@@ -10,7 +10,7 @@ RUN apk --update add tzdata \
 RUN mkdir -p /usr/src/node-app/egg-santak
 
 # 设置工作目录
-WORKDIR /usr/src/node-app/egg-santk
+WORKDIR /usr/src/node-app/egg-santak
 
 # 拷贝package.json文件到工作目录
 # !!重要：package.json需要单独添加。
