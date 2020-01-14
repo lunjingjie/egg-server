@@ -9,7 +9,7 @@ services:
     container_name: nodejs          # 容器名称
     restart: always                 # 重启方式
     ports:
-      - 9030:9030
+      - 9010:9010
     networks:                       # 加入指定网络
       - app-network
 
