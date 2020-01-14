@@ -54,15 +54,13 @@ services:
     image: nodejs                   # 镜像名称
     container_name: nodejs          # 容器名称
     restart: always                 # 重启方式
-    ports:                          # 映射端口
-      - "9010:9010"
-    depends_on:                     # 启动顺序
-      - santak_redis
-      - santak_mysql
-    links:                          # 容器连接
-      - santak_redis:santak_redis
-      - santak_mysql:santak_mysql
-    networks:                       # 加入指定网络
+#    depends_on:                     # 启动顺序
+#      - santak_redis
+#      - santak_mysql
+#    links:                          # 容器连接
+#      - santak_redis:santak_redis
+#      - santak_mysql:santak_mysql
+     networks:                       # 加入指定网络
       - app-network
 
 volumes:
