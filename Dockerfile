@@ -29,4 +29,4 @@ COPY . /usr/src/node-app/egg-santak
 EXPOSE 9010
 
 # 启动node应用
-CMD npm start
+CMD egg-bin dev
