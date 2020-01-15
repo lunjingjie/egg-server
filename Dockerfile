@@ -26,7 +26,7 @@ RUN npm i --registry=https://registry.npm.taobao.org
 COPY . /usr/src/node-app/egg-santak
 
 # 暴露容器端口
-EXPOSE 8081
+EXPOSE 9010
 
 # 启动node应用
 CMD npm start
