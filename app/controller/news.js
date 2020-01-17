@@ -5,7 +5,7 @@ class NewController extends Controller {
     const user = await this.service.newsService.find();
     console.log(user);
     this.ctx.body = {
-      user: 'admin—test1',
+      user: 'admin—test2',
       data: user,
     };
   }
