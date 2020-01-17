@@ -11,6 +11,13 @@ module.exports = appInfo => {
    * @type {Egg.EggAppConfig}
    **/
   const config = exports = {};
+
+  config.cluster = {
+    listen: {
+      port: 9010,
+    },
+  };
+
   config.mysql = {
     client: {
       // host
@@ -21,7 +28,9 @@ module.exports = appInfo => {
       user: 'lunjingjie',
       // 密码
       password: '1234',
-      // 数据库名
+      // 数据库名(开发)
+      // database: 'egg_server_dev',
+      // 数据库名(生产)
       database: 'egg_server_prod',
     },
     // 是否加载到 app 上，默认开启
@@ -35,12 +44,6 @@ module.exports = appInfo => {
 
   // add your middleware config here
   config.middleware = [];
-
-  config.cluster = {
-    listen: {
-      port: 9010,
-    },
-  };
 
   // add your user config here
   const userConfig = {
