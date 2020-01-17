@@ -21,7 +21,7 @@ module.exports = appInfo => {
   config.mysql = {
     client: {
       // host
-      host: '118.25.96.101',
+      host: 'localhost',
       // 端口号
       port: '3306',
       // 用户名
@@ -31,7 +31,7 @@ module.exports = appInfo => {
       // 数据库名(开发)
       // database: 'egg_server_dev',
       // 数据库名(生产)
-      database: 'egg_server_prod',
+      database: 'egg_server_dev',
     },
     // 是否加载到 app 上，默认开启
     app: true,
