@@ -17,7 +17,15 @@ module.exports = appInfo => {
       port: 9010,
     },
   };
+  // JWT配置
+  config.jwt = {
+    secret: 'egg-api-jwt',
+  };
+  config.middleware = {
+    jwt: 'jwt',
+  },
 
+  // mysql本地配置
   config.mysql = {
     client: {
       // host
